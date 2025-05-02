@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "New Jersey Int. | Industrial Equipment & Services",
+    "description": "New Jersey Int. offers construction elevators, tower cranes, spare parts and maintenance services for construction projects in UAE."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "language": "العربية"
+  },
+  "buttons": {
+    "readMore": "Read More",
+    "viewServices": "View Services",
+    "viewGallery": "View Gallery",
+    "contactUs": "Contact Us",
+    "send": "Send Message",
+    "learnMore": "Learn More"
+  },
+  "home": {
+    "hero": {
+      "title": "Elevating Construction Standards",
+      "subtitle": "Specialized in Construction Elevators, Tower Cranes, Spare Parts & Maintenance"
+    },
+    "intro": {
+      "title": "Welcome to New Jersey Int.",
+      "content": "We are a leading provider of industrial equipment and services in the UAE, specializing in construction elevators, tower cranes, spare parts, and maintenance services. With years of experience serving major contractors like JGG and Orbit, we deliver reliable solutions for all your construction needs."
+    },
+    "products": {
+      "title": "Our Products",
+      "construction_elevators": {
+        "title": "Construction Elevators",
+        "description": "High-quality external worker elevators for construction sites."
+      },
+      "tower_cranes": {
+        "title": "Tower Cranes",
+        "description": "Potain and XCMG tower cranes for all your lifting needs."
+      },
+      "spare_parts": {
+        "title": "Spare Parts",
+        "description": "Genuine spare parts for elevators and cranes."
+      },
+      "maintenance": {
+        "title": "Maintenance Services",
+        "description": "Professional maintenance to keep your equipment running smoothly."
+      }
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Construction Project?",
+      "content": "Contact us today to discuss your equipment needs and get a quote."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide high-quality construction equipment and exceptional service to our clients, enabling them to complete their projects safely and efficiently."
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "New Jersey Int. has been serving the UAE construction industry for many years, building a reputation for reliability, quality, and excellent customer service. Our partnerships with leading manufacturers like Potain and XCMG allow us to offer the best equipment to our clients."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality",
+      "quality_desc": "We provide only the highest quality equipment and services.",
+      "reliability": "Reliability",
+      "reliability_desc": "Our clients can depend on us for timely delivery and support.",
+      "expertise": "Expertise",
+      "expertise_desc": "Our team has extensive knowledge in construction equipment.",
+      "customer_service": "Customer Service",
+      "customer_service_desc": "We prioritize customer satisfaction in everything we do."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "content": "We work with leading manufacturers and contractors in the industry."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "intro": "We offer a comprehensive range of services to meet all your construction equipment needs.",
+    "elevator_sales": {
+      "title": "Construction Elevator Sales",
+      "description": "We offer high-quality external worker elevators for construction sites of all sizes. Our elevators are reliable, safe, and comply with all safety standards."
+    },
+    "crane_sales": {
+      "title": "Tower Crane Sales",
+      "description": "We supply Potain and XCMG tower cranes for construction projects. Our cranes are designed for efficiency, safety, and durability."
+    },
+    "spare_parts": {
+      "title": "Spare Parts Supply",
+      "description": "We provide genuine spare parts for all the equipment we sell, ensuring optimal performance and longevity."
+    },
+    "maintenance": {
+      "title": "Maintenance Services",
+      "description": "Our experienced technicians provide regular maintenance and emergency repair services to keep your equipment running smoothly and safely."
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "intro": "Explore our portfolio of equipment and projects."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Get in touch with us for inquiries, quotes, or support.",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "service": "Service Type",
+      "message": "Your Message",
+      "success": "Your message has been sent successfully. We'll get back to you soon!",
+      "error": "There was an error sending your message. Please try again or contact us directly.",
+      "services": {
+        "elevator": "Construction Elevators",
+        "crane": "Tower Cranes",
+        "parts": "Spare Parts",
+        "maintenance": "Maintenance",
+        "other": "Other"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "address_value": "PO Box 64564, Industrial Area 10, Sharjah, U.A.E.",
+      "phone": "Phone/WhatsApp",
+      "email": "Email",
+      "website": "Website"
+    },
+    "social": {
+      "title": "Follow Us",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp"
+    },
+    "map": {
+      "title": "Find Us"
+    }
+  },
+  "footer": {
+    "company": "New Jersey Int.",
+    "rights": "All Rights Reserved",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social Media"
+  }
+}
