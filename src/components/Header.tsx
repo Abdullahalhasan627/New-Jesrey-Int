@@ -40,7 +40,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white header-scrolled py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white shadow-elevation-2 py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           ))}
 
           {/* Language Switcher */}
-          <div className="language-switcher">
+          <div className="relative">
             <button
               onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
               className={`flex items-center font-medium transition-colors duration-200 ${
@@ -81,10 +81,10 @@ const Header: React.FC = () => {
               {i18n.language === 'en' ? 'EN' : 'AR'}
             </button>
             {isLanguageDropdownOpen && (
-              <div className="language-switcher-dropdown">
+              <div className="absolute top-full right-0 mt-2 py-2 w-32 bg-white rounded-lg shadow-elevation-2">
                 <button
                   onClick={toggleLanguage}
-                  className="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+                  className="w-full text-left px-4 py-2 text-secondary-700 hover:bg-gray-100 transition-colors duration-200"
                 >
                   {t('nav.language')}
                 </button>
@@ -96,7 +96,9 @@ const Header: React.FC = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(true)}
-          className={`md:hidden ${isScrolled ? 'text-primary-700' : 'text-white'}`}
+          className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
+            isScrolled ? 'text-primary-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'
+          }`}
           aria-label="Open menu"
         >
           <Menu size={24} />
@@ -111,7 +113,7 @@ const Header: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="mobile-menu-overlay"
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
@@ -119,14 +121,17 @@ const Header: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: i18n.language === 'ar' ? -300 : 300 }}
               transition={{ type: 'tween' }}
-              className="mobile-menu"
+              className={`fixed top-0 ${i18n.language === 'ar' ? 'left-0' : 'right-0'} h-full w-4/5 max-w-sm bg-white shadow-elevation-3 z-50`}
             >
               <div className="p-5 flex flex-col h-full">
                 <div className="flex justify-between items-center mb-8">
                   <Link to="/" className="font-heading font-bold text-xl text-primary-700">
                     New Jersey Int.
                   </Link>
-                  <button onClick={() => setIsMobileMenuOpen(false)} className="text-secondary-700">
+                  <button 
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="p-2 text-secondary-700 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+                  >
                     <X size={24} />
                   </button>
                 </div>
