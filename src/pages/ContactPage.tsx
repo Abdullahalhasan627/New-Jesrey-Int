@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
                     {t('contact.form.success')}
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit}>
+                  <form className="space-y-6" action="https://formspree.io/f/xyzwekzj" method="POST">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="form-control">
                         <label htmlFor="name" className="form-label">{t('contact.form.name')}</label>
