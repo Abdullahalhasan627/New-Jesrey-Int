@@ -12,12 +12,12 @@ const GalleryPage: React.FC = () => {
   const [index, setIndex] = useState(-1);
 
   const media = [
-    { src: './public/images/video_2025-05-08_17-59-02.mp4', type: 'video', width: 1260, height: 750, alt: 'Construction Elevator' },
-    { src: 'photo_2025-05-08_18-41-02.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
-    { src: '/photo_2025-05-08_18-22-08.jpg', type: 'image', width: 1260, height: 750, alt: 'Construction Site' },
-    { src: 'images/photo_2025-05-08_17-58-37.jpg', type: 'image', width: 1260, height: 750, alt: 'Industrial Equipment' },
+    { src: '/images/video_2025-05-08_17-59-02.mp4', type: 'video', width: 1260, height: 750, alt: 'Construction Elevator' },
+    { src: '/images/photo_2025-05-08_18-41-02.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
+    { src: '/images/photo_2025-05-08_18-22-08.jpg', type: 'image', width: 1260, height: 750, alt: 'Construction Site' },
+    { src: '/images/photo_2025-05-08_17-58-37.jpg', type: 'image', width: 1260, height: 750, alt: 'Industrial Equipment' },
     { src: '/images/video_2025-05-08_18-19-56.mp4', type: 'video', width: 1260, height: 750, alt: 'Construction Workers' },
-    { src: '/96773715_113595587023052_7846634263125426176_n.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
+    { src: '/images/96773715_113595587023052_7846634263125426176_n.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
   ];
 
   // Fixed type compatibility for Lightbox slides
@@ -36,7 +36,7 @@ const GalleryPage: React.FC = () => {
       <PageHeader 
         title={t('gallery.title')}
         subtitle={t('gallery.intro')}
-        backgroundImage="public/images/P-Cat-Tower-Crane1.jpg"
+        backgroundImage="/images/P-Cat-Tower-Crane1.jpg"
       />
       
       <section className="section bg-white">

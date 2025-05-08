@@ -20,7 +20,7 @@ const IntroSection: React.FC = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-elevation-3">
                 <img 
-                  src="public/images/3331f1ebf94d4b459083d4ca9f03a535.jpg" 
+                  src="/images/3331f1ebf94d4b459083d4ca9f03a535.jpg" 
                   alt="Construction equipment" 
                   className="w-full h-[500px] object-cover"
                 />
@@ -28,7 +28,7 @@ const IntroSection: React.FC = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-lg overflow-hidden shadow-elevation-2">
                 <img 
-                  src="public/images/cq5dam.web.1280.1280.webp" 
+                  src="/images/cq5dam.web.1280.1280.webp" 
                   alt="Construction site" 
                   className="w-full h-full object-cover"
                 />

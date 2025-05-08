@@ -29,10 +29,10 @@ const AboutPage: React.FC = () => {
   ];
 
   const partners = [
-    { name: 'Potain', logo: 'public/images/images (4).jpg' },
-    { name: 'XCMG', logo: 'public/images/images.png' },
-    { name: 'GJJ', logo: 'public/images/asakco_logo.jpg' },
-    { name: 'Orbit', logo: 'public/images/images (1).png' },
+    { name: 'Potain', logo: '/images/images (4).jpg' },
+    { name: 'XCMG', logo: '/images/images.png' },
+    { name: 'GJJ', logo: '/images/asakco_logo.jpg' },
+    { name: 'Orbit', logo: '/images/images (1).png' },
   ];
 
   return (
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
               className="order-2 md:order-1"
             >
               <img 
-                src="public/images/XGT8020-16-1 (1).jpg" 
+                src="/images/XGT8020-16-1 (1).jpg" 
                 alt="Our Story" 
                 className="rounded-lg shadow-elevation-3 w-full h-auto"
               />

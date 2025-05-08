@@ -16,25 +16,25 @@ const ProductCarousel: React.FC = () => {
     {
       id: 1,
       title: t('homes.products.items.0.title'),
-      image: 'public/images/593124_957220_GJJ Passenger hoist sinopro.jpg',
+      image: '/images/593124_957220_GJJ Passenger hoist sinopro.jpg',
       description: t('homes.products.items.0.description'),
     },
     {
       id: 2,
       title: t('homes.products.items.1.title'),
-      image: 'public/images/5-ton-tower-cranes-500x500.webp',
+      image: '/images/5-ton-tower-cranes-500x500.webp',
       description: t('homes.products.items.1.description'),
     },
     {
       id: 3,
       title: t('homes.products.items.2.title'),
-      image: 'public/images/XCMG-Official-Xgt600-25s-China-25-Ton-Building-Construction-Topless-Tower-Crane-with-Cheap-Price.avif',
+      image: '/images/XCMG-Official-Xgt600-25s-China-25-Ton-Building-Construction-Topless-Tower-Crane-with-Cheap-Price.avif',
       description: t('homes.products.items.2.description'),
     },
     {
       id: 4,
       title: t('homes.products.items.3.title'),
-      image: 'public/images/H816b89d24c2e4b8aa77244ccb706d159y.jpg_720x720q50.avif',
+      image: '/images/H816b89d24c2e4b8aa77244ccb706d159y.jpg_720x720q50.avif',
       description: t('homes.products.items.3.description'),
     },
   ];

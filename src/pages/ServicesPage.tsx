@@ -14,25 +14,25 @@ const ServicesPage: React.FC = () => {
       icon: <Building2 size={48} className="text-accent-500" />,
       title: t('services.elevator_sales.title'),
       description: t('services.elevator_sales.description'),
-      image: 'public/images/GJJ-PASSENGER-HOIST-LEYONG-TREST-DUBAI.png'
+      image: '/images/GJJ-PASSENGER-HOIST-LEYONG-TREST-DUBAI.png'
     },
     {
       icon: <Crane size={48} className="text-accent-500" />,
       title: t('services.crane_sales.title'),
       description: t('services.crane_sales.description'),
-      image: 'public/images/XCMG-Official-Manufacturer-Used-Xgtt200A-7015-10-Flat-Top-Tower-Cranes-for-Sale.avif'
+      image: '/images/XCMG-Official-Manufacturer-Used-Xgtt200A-7015-10-Flat-Top-Tower-Cranes-for-Sale.avif'
     },
     {
       icon: <Cog size={48} className="text-accent-500" />,
       title: t('services.spare_parts.title'),
       description: t('services.spare_parts.description'),
-      image: 'public/images/pro-detail-14.jpg'
+      image: '/images/pro-detail-14.jpg'
     },
     {
       icon: <Tool size={48} className="text-accent-500" />,
       title: t('services.maintenance.title'),
       description: t('services.maintenance.description'),
-      image: 'public/images/HTB1KMrHainrK1Rjy1Xcq6yeDVXaE.jpg_720x720q50.avif'
+      image: '/images/HTB1KMrHainrK1Rjy1Xcq6yeDVXaE.jpg_720x720q50.avif'
     }
   ];
 
@@ -45,7 +45,7 @@ const ServicesPage: React.FC = () => {
       <PageHeader 
         title={t('services.title')}
         subtitle={t('services.intro')}
-        backgroundImage="public/images/28a4a9d1723047ba9d966598c851fd73.jpg"
+        backgroundImage="/images/28a4a9d1723047ba9d966598c851fd73.jpg"
       />
       
       <section className="section bg-white">
