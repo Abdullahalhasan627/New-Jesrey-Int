@@ -45,7 +45,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src="/logo.svg" alt="New Jersey Int." className="h-12 w-auto" />
+          <img src="/mylogo.ico" alt="New Jersey Int." id='logoIco' className="h-12 w-auto" />
           <span className={`ml-2 font-heading font-bold text-xl ${isScrolled ? 'text-primary-700' : 'text-white'}`}>
             New Jersey Int.
           </span>

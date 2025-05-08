@@ -11,7 +11,11 @@
 }
 
 .section-title h2::after {
-  right: calc(85% - 100px)  !important;
+    right: calc(85% - 100px)  !important;
+    
+}
 
-  
+#logoIco {
+    border-radius: 5px;
+    margin-left: 1rem;
 }
