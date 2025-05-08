@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">{t('footer.company')}</h3>
             <p className="mb-4 text-gray-300">
-              PO Box 64564, Industrial Area 10, <br />
+              PO Box 64564, Al-Saj'a area, <br />
               Sharjah, U.A.E.
             </p>
             <p className="text-gray-300">
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mt-1 mr-2 flex-shrink-0" />
-                <p className="text-gray-300">Industrial Area 10, Sharjah, UAE</p>
+                <p className="text-gray-300">Al-Saj'a area, Sharjah, UAE</p>
               </li>
             </ul>
           </div>
@@ -88,7 +88,8 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">{t('footer.social')}</h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com/newgersyintl"
+                id='Whatsapp'
+                href="https://www.facebook.com/share/1Gs7bCdPZ4/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors"
@@ -97,7 +98,7 @@ const Footer: React.FC = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://instagram.com/mhm_d_lhsn8537"
+                href="https://www.instagram.com/mhmdlhsn8537?igsh=ZHZ0Nmd4Y245dnBt&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition-colors"

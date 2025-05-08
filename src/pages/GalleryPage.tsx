@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
@@ -12,18 +11,21 @@ const GalleryPage: React.FC = () => {
   const { t } = useTranslation();
   const [index, setIndex] = useState(-1);
 
-  const photos = [
-    { src: 'https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Construction Elevator' },
-    { src: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Tower Crane' },
-    { src: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Construction Site' },
-    { src: 'https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Industrial Equipment' },
-    { src: 'https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Construction Workers' },
-    { src: 'https://images.pexels.com/photos/210158/pexels-photo-210158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Machinery Parts' },
-    { src: 'https://images.pexels.com/photos/8985511/pexels-photo-8985511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Maintenance' },
-    { src: 'https://images.pexels.com/photos/2323261/pexels-photo-2323261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', width: 1260, height: 750, alt: 'Construction Equipment' },
+  const media = [
+    { src: 'public/images/video_2025-05-08_17-59-02.mp4', type: 'video', width: 1260, height: 750, alt: 'Construction Elevator' },
+    { src: 'public/images/photo_2025-05-08_18-41-02.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
+    { src: 'public/images/photo_2025-05-08_18-22-08.jpg', type: 'image', width: 1260, height: 750, alt: 'Construction Site' },
+    { src: 'public/images/photo_2025-05-08_17-58-37.jpg', type: 'image', width: 1260, height: 750, alt: 'Industrial Equipment' },
+    { src: 'public/images/video_2025-05-08_18-19-56.mp4', type: 'video', width: 1260, height: 750, alt: 'Construction Workers' },
+    { src: 'public/images/96773715_113595587023052_7846634263125426176_n.jpg', type: 'image', width: 1260, height: 750, alt: 'Tower Crane' },
   ];
 
-  const lightboxPhotos = photos.map(photo => ({ src: photo.src, alt: photo.alt }));
+  // Fixed type compatibility for Lightbox slides
+  const lightboxMedia = media.map(item => ({
+    src: item.src,
+    alt: item.alt,
+    type: item.type === 'video' ? 'image' : item.type // Treat videos as images for Lightbox compatibility
+  }));
 
   return (
     <>
@@ -34,7 +36,7 @@ const GalleryPage: React.FC = () => {
       <PageHeader 
         title={t('gallery.title')}
         subtitle={t('gallery.intro')}
-        backgroundImage="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="public/images/P-Cat-Tower-Crane1.jpg"
       />
       
       <section className="section bg-white">
@@ -45,20 +47,60 @@ const GalleryPage: React.FC = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: '-100px' }}
           >
-            <PhotoAlbum 
-              photos={photos} 
-              layout="rows" 
-              targetRowHeight={300}
-              onClick={({ index }) => setIndex(index)}
-              spacing={20}
-              padding={0}
-            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {media.map((item, idx) => (
+                <div key={idx} className="relative w-full h-64 overflow-hidden">
+                  {item.type === 'video' ? (
+                    <video
+                      src={item.src}
+                      controls={false}
+                      autoPlay
+                      loop
+                      muted
+                      className="w-full h-full object-cover cursor-pointer"
+                      onClick={() => setIndex(idx)}
+                    />
+                  ) : (
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full h-full object-cover cursor-pointer"
+                      onClick={() => setIndex(idx)}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
             
             <Lightbox
-              slides={lightboxPhotos}
+              slides={lightboxMedia}
               open={index >= 0}
               index={index}
               close={() => setIndex(-1)}
+              render={{
+                slide: ({ slide }) => (
+                  <div className="max-w-3xl mx-auto p-4 bg-white rounded-lg shadow-lg">
+                    {slide.type === 'image' ? (
+                      slide.src.endsWith('.mp4') ? (
+                        <video
+                          src={slide.src}
+                          controls
+                          autoPlay
+                          loop
+                          muted
+                          className="w-full h-auto object-cover rounded-lg"
+                        />
+                      ) : (
+                        <img
+                          src={slide.src}
+                          alt={slide.alt}
+                          className="w-full h-auto object-cover rounded-lg"
+                        />
+                      )
+                    ) : null}
+                  </div>
+                )
+              }}
             />
           </motion.div>
         </div>

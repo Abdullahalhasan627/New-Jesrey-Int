@@ -15,27 +15,27 @@ const ProductCarousel: React.FC = () => {
   const products = [
     {
       id: 1,
-      title: 'Construction Elevator SC200/200',
-      image: 'https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: 'Dual cage construction elevator with 2000kg lifting capacity',
+      title: t('homes.products.items.0.title'),
+      image: 'public/images/593124_957220_GJJ Passenger hoist sinopro.jpg',
+      description: t('homes.products.items.0.description'),
     },
     {
       id: 2,
-      title: 'Tower Crane Potain MCT 85',
-      image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: 'Compact city tower crane with 5-ton maximum capacity',
+      title: t('homes.products.items.1.title'),
+      image: 'public/images/5-ton-tower-cranes-500x500.webp',
+      description: t('homes.products.items.1.description'),
     },
     {
       id: 3,
-      title: 'XCMG XGT160 Tower Crane',
-      image: 'https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: 'Heavy-duty tower crane for large construction projects',
+      title: t('homes.products.items.2.title'),
+      image: 'public/images/XCMG-Official-Xgt600-25s-China-25-Ton-Building-Construction-Topless-Tower-Crane-with-Cheap-Price.avif',
+      description: t('homes.products.items.2.description'),
     },
     {
       id: 4,
-      title: 'Construction Elevator SC100/100',
-      image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: 'Single cage construction elevator with 1000kg lifting capacity',
+      title: t('homes.products.items.3.title'),
+      image: 'public/images/H816b89d24c2e4b8aa77244ccb706d159y.jpg_720x720q50.avif',
+      description: t('homes.products.items.3.description'),
     },
   ];
 

@@ -147,5 +147,28 @@
     "navigation": "Navigation",
     "contact": "Contact",
     "social": "Social Media"
+  },
+  "homes": {
+    "products": {
+      "title": "Our Products",
+      "items": [
+        {
+          "title": "Construction Elevator GJJ (SC200/200TD)",
+          "description": "Dual cage construction elevator with 2000kg lifting capacity"
+        },
+        {
+          "title": "Tower Crane Potain MCT 85",
+          "description": "Compact city tower crane with 12-ton maximum capacity"
+        },
+        {
+          "title": "XCMG XGT160 Tower Crane",
+          "description": "Heavy-duty tower crane for large construction projects"
+        },
+        {
+          "title": "Construction Elevator SC100/100",
+          "description": "Single cage construction elevator with 1000kg lifting capacity"
+        }
+      ]
+    }
   }
 }

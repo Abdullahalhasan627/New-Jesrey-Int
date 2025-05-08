@@ -170,7 +170,8 @@ const ContactPage: React.FC = () => {
                   <h4 className="font-semibold text-lg text-secondary-700 mb-4">{t('contact.social.title')}</h4>
                   <div className="flex space-x-4">
                     <a
-                      href="https://facebook.com/newgersyintl"
+                      href="https://www.facebook.com/share/1Gs7bCdPZ4/?mibextid=wwXIfr"
+                      id='Whatsapp'
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors"
@@ -179,7 +180,7 @@ const ContactPage: React.FC = () => {
                       <Facebook size={20} className="text-white" />
                     </a>
                     <a
-                      href="https://instagram.com/mhm_d_lhsn8537"
+                      href="https://www.instagram.com/mhmdlhsn8537?igsh=ZHZ0Nmd4Y245dnBt&utm_source=qr"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition-colors"
@@ -222,7 +223,7 @@ const ContactPage: React.FC = () => {
             <h3 className="text-2xl font-bold text-primary-700 mb-6">{t('contact.map.title')}</h3>
             <div className="bg-white rounded-lg shadow-elevation-2 p-2 h-96">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.4704307740655!2d55.40413207552705!3d25.294913177755376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bf8a456ce07%3A0x1e7d729c90e3a9e0!2sIndustrial%20Area%2010%2C%20Sharjah!5e0!3m2!1sen!2sae!4v1688478854301!5m2!1sen!2sae" 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d581.6166809138682!2d55.65092986851878!3d25.34093371985825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sar!2sae!4v1746715749930!5m2!1sar!2sae"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

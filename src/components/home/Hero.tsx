@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
           >
-            <Link to="/services" className="btn btn-accent text-lg px-8 py-4 w-full sm:w-auto">
+            <Link to="/services" className="btn btn-accent text-lg px-8 py-4 w-full sm:w-auto" id='hero-button'>
               {t('buttons.viewServices')}
             </Link>
             <Link to="/contact" className="btn btn-outline border-2 border-white text-white hover:bg-white hover:text-primary-700 text-lg px-8 py-4 w-full sm:w-auto">

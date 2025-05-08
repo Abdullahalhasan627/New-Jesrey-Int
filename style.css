@@ -1,0 +1,17 @@
+#Whatsapp {
+    margin-left: 1rem;
+}
+
+.nav.home {
+    margin-left: 1rem;
+}
+
+#hero-button {
+    margin-left: 1.5rem;
+}
+
+.section-title h2::after {
+  right: calc(85% - 100px)  !important;
+
+  
+}

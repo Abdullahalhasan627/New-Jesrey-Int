@@ -29,10 +29,10 @@ const AboutPage: React.FC = () => {
   ];
 
   const partners = [
-    { name: 'Potain', logo: 'https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
-    { name: 'XCMG', logo: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
-    { name: 'JGG', logo: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
-    { name: 'Orbit', logo: 'https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+    { name: 'Potain', logo: 'public/images/images (4).jpg' },
+    { name: 'XCMG', logo: 'public/images/images.png' },
+    { name: 'GJJ', logo: 'public/images/asakco_logo.jpg' },
+    { name: 'Orbit', logo: 'public/images/images (1).png' },
   ];
 
   return (
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
               className="order-2 md:order-1"
             >
               <img 
-                src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="public/images/XGT8020-16-1 (1).jpg" 
                 alt="Our Story" 
                 className="rounded-lg shadow-elevation-3 w-full h-auto"
               />
@@ -116,7 +116,7 @@ const AboutPage: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true, margin: '-100px' }}
+              viewport={{ once: true, margin: '-100px'}}
             >
               {t('about.values.title')}
             </motion.h2>
